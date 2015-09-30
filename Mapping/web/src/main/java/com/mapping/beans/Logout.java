@@ -23,6 +23,8 @@ public class Logout implements Serializable{
 		
 	}
 	
+	
+	/*marik*/
 	public void logout() throws IOException {
 	    ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
 	    ec.invalidateSession();
