@@ -76,6 +76,7 @@ public class UserBean implements Serializable{
 					e.printStackTrace();
 				}
 			}
+			//PIRUJA
 			else{
 				try {
 					userAction.merge(user);
