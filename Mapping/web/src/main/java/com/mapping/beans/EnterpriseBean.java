@@ -23,17 +23,9 @@ import com.mapping.services.EnterpriseEjb;
 @SessionScoped
 public class EnterpriseBean implements Serializable{
 
-	/**
-	 * 
-	 */
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 71272475901124242L;
-	/**
-	 * 
-	 */
+	
 	
 	private Enterprise enterprise = new Enterprise();
 	private Enterprise enterpriseSearch = new Enterprise();
@@ -116,7 +108,8 @@ public class EnterpriseBean implements Serializable{
 	
 	public void search(){
 		try {
-			enterpriseList = enterpriseAction.findAll();
+		//cambio
+			enterpriseList = enterpriseAction.findByEnterpriseName(enterpriseSearch);
 			RequestContext.getCurrentInstance().update("enterpriseForm:enterpriseTable");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -140,7 +133,9 @@ public class EnterpriseBean implements Serializable{
 	
 	public void clean(){
 		enterpriseList = new ArrayList<Enterprise>();
-		RequestContext.getCurrentInstance().update("enterpriseForm:entepriseTable");
+		enterpriseSearch= new Enterprise();
+		RequestContext.getCurrentInstance().update("enterpriseForm:enterpriseTable");
+		RequestContext.getCurrentInstance().update("enterpriseForm:enterpriseSearchInput");
 	}
 	
 	public void edit(Enterprise ent){
