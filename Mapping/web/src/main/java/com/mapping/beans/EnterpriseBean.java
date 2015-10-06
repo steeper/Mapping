@@ -23,7 +23,7 @@ import com.mapping.services.EnterpriseEjb;
 @SessionScoped
 public class EnterpriseBean implements Serializable{
 
-	//4545
+	//4545asdasdasdasd
 	private static final long serialVersionUID = 71272475901124242L;
 	
 	
