@@ -37,7 +37,7 @@ public class EnterpriseBean implements Serializable{
 	private String regexText = new String();
 	
 	
-
+	//asdasd
 
 
 
