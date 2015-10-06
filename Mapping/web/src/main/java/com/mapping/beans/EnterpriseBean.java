@@ -142,13 +142,7 @@ public class EnterpriseBean implements Serializable{
 		isNew = Boolean.FALSE;
 		enterprise = new Enterprise();
 		enterprise= ent;
-		//cambio en declaracion de objeto
-		/*ent = new Enterprise();	
-		 * +
-		enterprise= ent;*/
-		//piruja
-		//asdasdasdasdasd
-		//asdasdasd
+		
 		RequestContext.getCurrentInstance().update("enterpriseForm:insertDialog");
 		RequestContext.getCurrentInstance().execute("PF('dlg2').show();");
 	}
