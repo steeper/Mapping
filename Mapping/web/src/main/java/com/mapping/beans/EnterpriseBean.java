@@ -24,6 +24,7 @@ import com.mapping.services.EnterpriseEjb;
 public class EnterpriseBean implements Serializable{
 
 	//4545asdasdasdasd
+	//prueba
 	private static final long serialVersionUID = 71272475901124242L;
 	
 	
